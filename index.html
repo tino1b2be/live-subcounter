@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>1b2be Live SubCounter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="extras/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="extras/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- Custom styles for this page -->
+    <link href="extras/css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger text-capitalize" href="#page-top">1b2be Live SubCounter</a>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container">
+
+        <!--Search Bar-->
+
+        <div class="row">
+            <div class="col-12">
+                <form id="search_form">
+                    <div class="input-group">
+                        <input id="search_query" class="form-control border-secondary py-2" type="search"
+                               placeholder="Search by channel name or ID.">
+                        <div class="input-group-append">
+                            <button id="search_button" class="btn btn-outline-secondary" type="button"
+                                    onclick="search_for_channel(false)">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Counter-->
+
+        <h2 class="font-weight-light mb-0 odometer" id="sub_count">&lt;Subscriber Count&gt;</h2>
+        <p class="lead">Subscribers</p>
+
+        <a class="channel_url" href="#" target="_blank">
+            <h1 class="mb-0 username">tino1b2be</h1>
+
+            <!--Cover Picture-->
+
+            <img class="img-responsive" id="cover-pic" src="" alt="">
+
+            <!--Profile Picture-->
+            <div class="profile ">
+                <img class="img-responsive mb-5 d-block mx-auto rounded-circle" id="profile_pic" src="#" alt="">
+            </div>
+        </a>
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <h2 class="font-weight-light mb-0 stats" id="view_count">0</h2>
+                <p class="lead">Views</p>
+            </div>
+            <div class="col-lg-4 ml-auto">
+                <h2 class="font-weight-light mb-0 stats" id="video_count">0</h2>
+                <p class="lead">Videos</p>
+            </div>
+            <div class="col-lg-4 ml-auto">
+                <h2 class="font-weight-light mb-0 stats" id="comments_count">0</h2>
+                <p class="lead">Comments</p>
+            </div>
+        </div>
+
+
+    </div>
+</header>
+
+<!-- Recent Videos Grid Section -->
+
+<section class="g-adsense">
+    <div class="container-fluid">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 1b2be-live-subcounter -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5103255358698382"
+             data-adtest="on"
+             data-ad-slot="8417860628"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</section>
+
+<section class="portfolio">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Recent Videos</h2>
+        <hr class="star-dark mb-5">
+        <div class="row" id="recent_thumbs">
+
+            <!--Things go here-->
+
+        </div>
+    </div>
+</section>
+
+<div id="snackbar">Some text some message..</div>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+
+            <!--<div class="col-md-4 mb-5 mb-lg-0">-->
+            <!--<h4 class="text-uppercase mb-4">Test</h4>-->
+            <!--<p class="lead mb-0"> just test content-->
+            <!--<br>Clark, MO 65243</p>-->
+            <!--</div>-->
+
+            <div class="col-md-6 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Catch on the Interweb!</h4>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://tino1b2be.com/">
+                            <i class="fa fa-fw fa-internet-explorer"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://github.com/tino1b2be">
+                            <i class="fa fa-fw fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://www.linkedin.com/in/tino1b2be">
+                            <i class="fa fa-fw fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://www.youtube.com/channel/UC2YoJYsMAs4Pb-H90y_Ij6Q?sub_confirmation=1">
+                            <i class="fa fa-fw fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://instagram.com/tino1b2be">
+                            <i class="fa fa-fw fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-info mb-4">About 1b2be Live SubCounter</h4>
+                <p class="lead mb-0">Check the project out on GitHub!</p>
+                <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                   href="https://github.com/tino1b2be">
+                    <i class="fa fa-fw fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright py-4 text-center text-white">
+    <div class="container">
+        <small>Copyright &copy; <a href="https://tino1b2be.com/">tino1b2be.com</a></small>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="extras/jquery/jquery.min.js"></script>
+<script src="extras/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for SubCounter-->
+<script src="extras/js/freelancer.min.js"></script>
+<script src="extras/js/odometer.min.js"></script>
+<script src="extras/js/subcounter.min.js"></script>
+
+</body>
+
+</html>
