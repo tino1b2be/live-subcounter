@@ -1,4 +1,4 @@
-@import url("economica.css");
+@import url("economica.min.css");
 .odometer.odometer-auto-theme, .odometer.odometer-theme-train-station {
   display: inline-block;
   vertical-align: middle;
