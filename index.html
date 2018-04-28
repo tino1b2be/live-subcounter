@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="An OpenSource live counter for youtube subscribers that is updated every second.">
+    <meta name="author" content="tino1b2be">
 
-    <title>1b2be Live SubCounter</title>
+    <title>1b2be Live YouTube SubCounter</title>
 
     <!-- Bootstrap core CSS -->
     <link href="extras/css/bootstrap.min.css" rel="stylesheet">
@@ -16,11 +16,24 @@
     <!-- Custom fonts for this template -->
     <link href="extras/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this page -->
     <link href="extras/css/style.min.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="favicon/favicon-vfl8qSV2F.ico" type="image/x-icon" >
+	<link rel="icon" href="favicon/favicon_32-vflOogEID.png" sizes="32x32" >
+	<link rel="icon" href="favicon/favicon_48-vflVjB_Qk.png" sizes="48x48" >
+	<link rel="icon" href="favicon/favicon_96-vflW9Ec0w.png" sizes="96x96" >
+	<link rel="icon" href="favicon/favicon_144-vfliLAfaB.png" sizes="144x144" >
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"https://tino1b2be.com/privacy-policy/","theme":"light-floating"};
+    </script>
+
+    <script type="text/javascript" src="extras/js/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 
 </head>
 
@@ -35,7 +48,7 @@
 
 <!-- Header -->
 <header class="masthead bg-primary text-white text-center">
-    <div class="container">
+    <div class="container top-profile">
 
         <!--Search Bar-->
 
@@ -62,28 +75,28 @@
         <p class="lead">Subscribers</p>
 
         <a class="channel_url" href="#" target="_blank">
-            <h1 class="mb-0 username">tino1b2be</h1>
+            <h1 class="mb-0 username">YouTube Live SubCounter</h1>
 
             <!--Cover Picture-->
 
-            <img class="img-responsive" id="cover-pic" src="" alt="">
+            <img class="img-responsive" id="cover-pic" src="" alt="YouTube brand cover picture">
 
             <!--Profile Picture-->
             <div class="profile ">
-                <img class="img-responsive mb-5 d-block mx-auto rounded-circle" id="profile_pic" src="#" alt="">
+                <img class="img-responsive mb-5 d-block mx-auto rounded-circle" id="profile_pic" src="#" alt="YouTube profile picture">
             </div>
         </a>
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <h2 class="font-weight-light mb-0 stats" id="view_count">0</h2>
+                <h2 class="font-weight-light mb-0 stats" id="view_count">Total Number of Video Views</h2>
                 <p class="lead">Views</p>
             </div>
             <div class="col-lg-4 ml-auto">
-                <h2 class="font-weight-light mb-0 stats" id="video_count">0</h2>
+                <h2 class="font-weight-light mb-0 stats" id="video_count">Total Number of Videos</h2>
                 <p class="lead">Videos</p>
             </div>
             <div class="col-lg-4 ml-auto">
-                <h2 class="font-weight-light mb-0 stats" id="comments_count">0</h2>
+                <h2 class="font-weight-light mb-0 stats" id="comments_count">Total Number of Comments on Videos</h2>
                 <p class="lead">Comments</p>
             </div>
         </div>
@@ -101,7 +114,6 @@
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-5103255358698382"
-             <!--data-adtest="on"-->
              data-ad-slot="8417860628"
              data-ad-format="auto"></ins>
         <script>
