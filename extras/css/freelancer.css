@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', monospace;
 }
 
 hr.star-light,
@@ -30,7 +30,7 @@ hr.star-dark:after {
     display: inline-block;
     padding: 0 0.25em;
     content: '\f005';
-    font-family: FontAwesome;
+    font-family: FontAwesome, sans-serif;
     font-size: 2em;
 }
 
@@ -98,7 +98,7 @@ section h2 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -183,7 +183,7 @@ header.masthead h1 {
 
 header.masthead h2 {
     font-size: 2.7rem;
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
 }
 
 @media (min-width: 992px) {
@@ -346,7 +346,7 @@ a {
 }
 
 a:focus, a:hover, a:active {
-    color: #128f76;
+    color: #18cbc3;
 }
 
 .btn {

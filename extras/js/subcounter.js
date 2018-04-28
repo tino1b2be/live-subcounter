@@ -187,6 +187,12 @@ function search_for_channel(query) {
 }
 
 $(document).ready(function () {
+	setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    }); 
     $('#search_form').submit(function () {
         search_for_channel(false);
         return false;
